@@ -44,7 +44,7 @@ const Header = () => {
         </div>
 
         {/* Desktop Nav Links */}
-        <ul className="hidden md:flex space-x-8 items-center">
+        <ul className="hidden lg:flex space-x-8 items-center">
           {navLinks.map((link) => (
             <li key={link.href}>
               <Link
@@ -62,7 +62,7 @@ const Header = () => {
         </ul>
 
         {/* Desktop Action Button */}
-        <div className="hidden md:flex -mt-2 items-center">
+        <div className="hidden lg:flex -mt-2 items-center">
           <Link
             href="/devis"
             className="px-6 text-2xl py-3 h-[70px] w-[120px] flex items-center justify-center bg-black text-yellow-400 rounded-2xl font-semibold shadow-md hover:bg-yellow-400 hover:text-black transition-colors"
@@ -72,7 +72,7 @@ const Header = () => {
         </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden flex items-center">
+        <div className="lg:hidden flex items-center">
           <button onClick={() => setMobileOpen(!mobileOpen)}>
             {mobileOpen ? (
               <X className="text-white w-8 h-8" />
@@ -85,7 +85,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {mobileOpen && (
-        <div className="md:hidden bg-black/80 backdrop-blur-md px-6 py-4">
+        <div className="lg:hidden bg-black/80 backdrop-blur-md px-6 py-4">
           <ul className="flex flex-col space-y-4">
             {navLinks.map((link) => (
               <li key={link.href}>
