@@ -13,18 +13,18 @@ const Header = () => {
   const navLinks = [
     { href: "/products", label: "Produits" },
     { href: "/services", label: "Services" },
-    { href: "/about", label: "À propos" },
+    { href: "/", label: "À propos" },
     { href: "/conseil", label: "Conseil" },
     { href: "/partenaires", label: "Partenaires" },
     { href: "/contact", label: "Contact" },
   ];
 
   return (
-    <header className="absolute top-[70px] left-0 w-full z-50 bg-black/50 backdrop-blur-md">
+    <header className="fixed top-[70px] left-0 w-full z-50 bg-black/50 backdrop-blur-md">
       <nav className="container mx-auto flex items-center justify-between px-6 h-16">
         {/* Logo */}
         <div className="-mt-2 flex items-center">
-          <Link href="/">
+          <Link href="/home">
             <Image
               src="/logo.jpg"
               alt="logo"

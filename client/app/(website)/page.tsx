@@ -1,8 +1,7 @@
 import Image from "next/image";
-import Header from "./components/Header";
 import { Flame, Gem, Smile, Star } from "lucide-react";
 
-export default function HomePage() {
+export default function AboutPage() {
     const valeurs = [
     {
       icon: <Star className="w-8 h-8 text-[#FBD96D]" />,
@@ -51,9 +50,6 @@ export default function HomePage() {
         className="relative min-h-screen flex flex-col items-center justify-center text-center bg-cover bg-center"
         style={{ backgroundImage: "url('/hero_img.jpg')" }}
       >
-        <Header />
-        {/* Sticky Header (only for Hero) */}
-
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/60"></div>
 
